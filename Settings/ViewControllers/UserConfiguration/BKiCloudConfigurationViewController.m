@@ -34,7 +34,7 @@
 
 #import "BKiCloudConfigurationViewController.h"
 #import "BKUserConfigurationManager.h"
-#import "Blink-swift.h"
+#import "MoSSH-swift.h"
 
 @interface BKiCloudConfigurationViewController ()
 

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EA0BA18A1C0CC57B00719C1A"
-               BuildableName = "Blink.app"
+               BuildableName = "MoSSH.app"
                BlueprintName = "MoSSH"
                ReferencedContainer = "container:MoSSH.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EA0BA1A31C0CC57B00719C1A"
-               BuildableName = "Blink.xctest"
+               BuildableName = "MoSSH.xctest"
                BlueprintName = "MoSSHUITests"
                ReferencedContainer = "container:MoSSH.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA0BA18A1C0CC57B00719C1A"
-            BuildableName = "Blink.app"
+            BuildableName = "MoSSH.app"
             BlueprintName = "MoSSH"
             ReferencedContainer = "container:MoSSH.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA0BA18A1C0CC57B00719C1A"
-            BuildableName = "Blink.app"
+            BuildableName = "MoSSH.app"
             BlueprintName = "MoSSH"
             ReferencedContainer = "container:MoSSH.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA0BA18A1C0CC57B00719C1A"
-            BuildableName = "Blink.app"
+            BuildableName = "MoSSH.app"
             BlueprintName = "MoSSH"
             ReferencedContainer = "container:MoSSH.xcodeproj">
          </BuildableReference>

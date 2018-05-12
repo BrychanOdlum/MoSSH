@@ -69,7 +69,7 @@ function _colorComponents(colorStr) {
 }
 
 // Before we fully load hterm. We set options here.
-var _prefs = new hterm.PreferenceManager('blink');
+var _prefs = new hterm.PreferenceManager('device');
 var t = { prefs_: _prefs }; // <- `t` will become actual hterm instance after decorate.
 
 function term_set(key, value) {
@@ -88,7 +88,7 @@ function term_setupDefaults() {
 }
 
 function term_setup() {
-  t = new hterm.Terminal('blink');
+  t = new hterm.Terminal('device');
 
   t.onTerminalReady = function() {
     t.io.onTerminalResize = function(cols, rows) {

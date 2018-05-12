@@ -31,7 +31,7 @@
 
 #import "BKTouchIDAuthManager.h"
 #import "BKUserConfigurationManager.h"
-#import "Blink-swift.h"
+#import "MoSSH-swift.h"
 
 const NSNotificationName BKUserAuthenticated = @"BKUserAuthenticated";
 

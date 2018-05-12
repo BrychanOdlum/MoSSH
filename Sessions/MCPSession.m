@@ -202,7 +202,7 @@ char* hints(const char * line, int *color, int *bold)
 
 - (void)setTitle
 {
-  fprintf(_stream.control.termout, "\033]0;blink\007");
+  fprintf(_stream.control.termout, "\033]0;Device\007");
 }
 
 + (void)initialize
@@ -259,7 +259,7 @@ char* hints(const char * line, int *color, int *bold)
   linenoiseSetCompletionCallback(completion);
   linenoiseSetHintsCallback(hints);
 
-  while ((line = [self linenoise:"blink> "]) != nil) {
+  while ((line = [self linenoise:"$ "]) != nil) {
     if (line[0] != '\0' && line[0] != '/') {
       linenoiseHistoryAdd(line);
       linenoiseHistorySave(history);
@@ -272,8 +272,10 @@ char* hints(const char * line, int *color, int *bold)
       NSString *cmd = arr[0];
       NSString *args = arr[1];
 
-      if ([cmd isEqualToString:@"help"]) {
-        [self _showHelp];
+			if ([cmd isEqualToString:@"help"]) {
+				[self _showHelp];
+			} else if ([cmd isEqualToString:@"about"]) {
+					[self _showAbout];
       } else if ([cmd isEqualToString:@"mosh"]) {
         // At some point the parser will be in the JS, and the call will, through JSON, will include what is needed.
         // Probably passing a Server struct of some type.
@@ -448,41 +450,56 @@ char* hints(const char * line, int *color, int *bold)
 
 - (void)_showHelp
 {
-  UIKeyModifierFlags flags = [BKUserConfigurationManager shortCutModifierFlags];
-  NSString *flagsStr = [BKUserConfigurationManager UIKeyModifiersToString:flags];
-  NSString *help = [@[
-    @"",
-    [self _shortVersionString],
-    @"",
-    @"Available commands:",
-    @"  mosh: mosh client.",
-    @"  ssh: ssh client.",
-    @"  ssh-copy-id: Copy an identity to the server.",
-    @"  config: Configure Blink. Add keys, hosts, themes, etc...",
-    @"  theme: Switch theme.",
-    @"  music: Control music player.",
-    @"  history: Manage history.",
-    @"  clear: Clear screen.",
-    @"  help: Prints this.",
-    @"  exit: Close this shell.",
-    @"",
-    @"Available gestures and keyboard shortcuts:",
-    [NSString stringWithFormat:@"  two fingers tap or %@+t: New shell.", flagsStr],
-    @"  two fingers swipe up: Show control panel.",
-    @"  two fingers drag down dismiss keyboard.",
-    [NSString stringWithFormat:@"  one finger swipe left/right or %@+[]: Switch between shells.", flagsStr],
-    [NSString stringWithFormat:@"  %@+N: Switch to shell number N.", flagsStr],
-    [NSString stringWithFormat:@"  %@+w: Close shell.", flagsStr],
-    [NSString stringWithFormat:@"  %@+o: Switch to other screen (Airplay mode).", flagsStr],
-    [NSString stringWithFormat:@"  %@+O: Move current shell to other screen (Airplay mode).", flagsStr],
-    [NSString stringWithFormat:@"  %@+,: Open config.", flagsStr],
-    [NSString stringWithFormat:@"  %@+m: Toggle music controls. (Control with %@+npsrb).", flagsStr, flagsStr],
-    @"  pinch: Change font size.",
-    @"  selection mode: VIM users: hjklwboyp, EMACS: ⌃-fbnpx, OTHER: arrows and fingers",
-    @""
-  ] componentsJoinedByString:@"\r\n"];
+	UIKeyModifierFlags flags = [BKUserConfigurationManager shortCutModifierFlags];
+	NSString *flagsStr = [BKUserConfigurationManager UIKeyModifiersToString:flags];
+	NSString *help = [@[
+											@"",
+											[self _shortVersionString],
+											@"",
+											@"Available commands:",
+											@"  mosh: mosh client.",
+											@"  ssh: ssh client.",
+											@"  ssh-copy-id: Copy an identity to the server.",
+											@"  config: Configure client. Add keys, hosts, themes, etc...",
+											@"  theme: Switch theme.",
+											@"  music: Control music player.",
+											@"  history: Manage history.",
+											@"  clear: Clear screen.",
+											@"  help: Prints this.",
+											@"  exit: Close this shell.",
+											@"",
+											@"Available gestures and keyboard shortcuts:",
+											[NSString stringWithFormat:@"  two fingers tap or %@+t: New shell.", flagsStr],
+											@"  two fingers swipe up: Show control panel.",
+											@"  two fingers drag down dismiss keyboard.",
+											[NSString stringWithFormat:@"  one finger swipe left/right or %@+[]: Switch between shells.", flagsStr],
+											[NSString stringWithFormat:@"  %@+N: Switch to shell number N.", flagsStr],
+											[NSString stringWithFormat:@"  %@+w: Close shell.", flagsStr],
+											[NSString stringWithFormat:@"  %@+o: Switch to other screen (Airplay mode).", flagsStr],
+											[NSString stringWithFormat:@"  %@+O: Move current shell to other screen (Airplay mode).", flagsStr],
+											[NSString stringWithFormat:@"  %@+,: Open config.", flagsStr],
+											[NSString stringWithFormat:@"  %@+m: Toggle music controls. (Control with %@+npsrb).", flagsStr, flagsStr],
+											@"  pinch: Change font size.",
+											@"  selection mode: VIM users: hjklwboyp, EMACS: ⌃-fbnpx, OTHER: arrows and fingers",
+											@""
+											] componentsJoinedByString:@"\r\n"];
+	
+	[self out:help.UTF8String];
+}
 
-  [self out:help.UTF8String];
+- (void)_showAbout
+{
+	NSString *info = [@[
+											@"",
+											[self _shortVersionString],
+											@"",
+											@"MoSSH is a fork of http://blink.sh's open source 'Blink'.",
+											@"MoSSH is itself open source, you may find the repo here:",
+											@"https://github.com/BrychanOdlum/MoSSH",
+											@""
+											] componentsJoinedByString:@"\r\n"];
+	
+	[self out:info.UTF8String];
 }
 
 - (void)out:(const char *)str

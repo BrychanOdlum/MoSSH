@@ -420,7 +420,7 @@
   
   _hud.customView = pages;
   
-  NSString *title = currentTerm.title.length ? currentTerm.title : @"blink";
+  NSString *title = currentTerm.title.length ? currentTerm.title : @"device";
   
   MCPSessionParameters *params = currentTerm.sessionParameters;
   if (params.rows == 0 && params.cols == 0) {
