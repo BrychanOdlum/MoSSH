@@ -337,7 +337,7 @@
 		0759A8641D6361D1009CF12F /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HockeySDKResources.bundle; path = Frameworks/HockeySDK.embeddedframework/HockeySDK.framework/Versions/A/Resources/HockeySDKResources.bundle; sourceTree = SOURCE_ROOT; };
 		076FBD4F1DB6BD9400F6D997 /* libmoshios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libmoshios.framework; sourceTree = "<group>"; };
 		076FBD511DB6BE1D00F6D997 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libprotobuf.a; sourceTree = "<group>"; };
-		076FBE5A1DB80AC900F6D997 /* Blink Hockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blink Hockey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		076FBE5A1DB80AC900F6D997 /* MoSSH Hockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MoSSH Hockey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0795F29B1DC11C6B00CC8B83 /* Blink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blink.entitlements; sourceTree = "<group>"; };
 		079635831D0E6602000473B1 /* TermView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermView.h; sourceTree = "<group>"; };
 		079635841D0E6602000473B1 /* TermView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermView.m; sourceTree = "<group>"; };
@@ -483,8 +483,8 @@
 		D2A92351201732B600043596 /* MusicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicManager.m; sourceTree = "<group>"; };
 		D2D0AD061FFB7A74007EC56A /* MCPSessionParameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCPSessionParameters.h; sourceTree = "<group>"; };
 		D2D0AD071FFB7A74007EC56A /* MCPSessionParameters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCPSessionParameters.m; sourceTree = "<group>"; };
-		EA0BA18B1C0CC57B00719C1A /* Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA0BA1A41C0CC57B00719C1A /* Blink.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Blink.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0BA18B1C0CC57B00719C1A /* MoSSH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoSSH.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0BA1A41C0CC57B00719C1A /* MoSSH.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoSSH.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -971,9 +971,9 @@
 		EA0BA18C1C0CC57B00719C1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA0BA18B1C0CC57B00719C1A /* Blink.app */,
-				EA0BA1A41C0CC57B00719C1A /* Blink.xctest */,
-				076FBE5A1DB80AC900F6D997 /* Blink Hockey.app */,
+				EA0BA18B1C0CC57B00719C1A /* MoSSH.app */,
+				EA0BA1A41C0CC57B00719C1A /* MoSSH.xctest */,
+				076FBE5A1DB80AC900F6D997 /* MoSSH Hockey.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -981,9 +981,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		076FBE0B1DB80AC900F6D997 /* Blink Hockey */ = {
+		076FBE0B1DB80AC900F6D997 /* MoSSH Hockey */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 076FBE571DB80AC900F6D997 /* Build configuration list for PBXNativeTarget "Blink Hockey" */;
+			buildConfigurationList = 076FBE571DB80AC900F6D997 /* Build configuration list for PBXNativeTarget "MoSSH Hockey" */;
 			buildPhases = (
 				076FBE101DB80AC900F6D997 /* Sources */,
 				076FBE381DB80AC900F6D997 /* Frameworks */,
@@ -996,14 +996,14 @@
 				076FBE0C1DB80AC900F6D997 /* PBXTargetDependency */,
 				076FBE0E1DB80AC900F6D997 /* PBXTargetDependency */,
 			);
-			name = "Blink Hockey";
+			name = "MoSSH Hockey";
 			productName = Blink;
-			productReference = 076FBE5A1DB80AC900F6D997 /* Blink Hockey.app */;
+			productReference = 076FBE5A1DB80AC900F6D997 /* MoSSH Hockey.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA0BA18A1C0CC57B00719C1A /* Blink */ = {
+		EA0BA18A1C0CC57B00719C1A /* MoSSH */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA0BA1AD1C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "Blink" */;
+			buildConfigurationList = EA0BA1AD1C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "MoSSH" */;
 			buildPhases = (
 				EA0BA1871C0CC57B00719C1A /* Sources */,
 				EA0BA1881C0CC57B00719C1A /* Frameworks */,
@@ -1016,14 +1016,14 @@
 				0732F1211D062DDB00AB5438 /* PBXTargetDependency */,
 				0732F1251D062DDC00AB5438 /* PBXTargetDependency */,
 			);
-			name = Blink;
+			name = MoSSH;
 			productName = Blink;
-			productReference = EA0BA18B1C0CC57B00719C1A /* Blink.app */;
+			productReference = EA0BA18B1C0CC57B00719C1A /* MoSSH.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EA0BA1A31C0CC57B00719C1A /* BlinkUITests */ = {
+		EA0BA1A31C0CC57B00719C1A /* MoSSHUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA0BA1B01C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "BlinkUITests" */;
+			buildConfigurationList = EA0BA1B01C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "MoSSHUITests" */;
 			buildPhases = (
 				EA0BA1A01C0CC57B00719C1A /* Sources */,
 				EA0BA1A11C0CC57B00719C1A /* Frameworks */,
@@ -1034,9 +1034,9 @@
 			dependencies = (
 				EA0BA1A61C0CC57B00719C1A /* PBXTargetDependency */,
 			);
-			name = BlinkUITests;
+			name = MoSSHUITests;
 			productName = BlinkUITests;
-			productReference = EA0BA1A41C0CC57B00719C1A /* Blink.xctest */;
+			productReference = EA0BA1A41C0CC57B00719C1A /* MoSSH.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -1054,9 +1054,9 @@
 					};
 					EA0BA18A1C0CC57B00719C1A = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = HV2S48975V;
+						DevelopmentTeam = 5LY66NJJ4J;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.DataProtection = {
 								enabled = 1;
@@ -1079,7 +1079,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA0BA1861C0CC57B00719C1A /* Build configuration list for PBXProject "Blink" */;
+			buildConfigurationList = EA0BA1861C0CC57B00719C1A /* Build configuration list for PBXProject "MoSSH" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1114,9 +1114,9 @@
 			);
 			projectRoot = "";
 			targets = (
-				EA0BA18A1C0CC57B00719C1A /* Blink */,
-				EA0BA1A31C0CC57B00719C1A /* BlinkUITests */,
-				076FBE0B1DB80AC900F6D997 /* Blink Hockey */,
+				EA0BA18A1C0CC57B00719C1A /* MoSSH */,
+				EA0BA1A31C0CC57B00719C1A /* MoSSHUITests */,
+				076FBE0B1DB80AC900F6D997 /* MoSSH Hockey */,
 			);
 		};
 /* End PBXProject section */
@@ -1398,7 +1398,7 @@
 		};
 		EA0BA1A61C0CC57B00719C1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EA0BA18A1C0CC57B00719C1A /* Blink */;
+			target = EA0BA18A1C0CC57B00719C1A /* MoSSH */;
 			targetProxy = EA0BA1A51C0CC57B00719C1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1610,7 +1610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HV2S48975V;
+				DEVELOPMENT_TEAM = 5LY66NJJ4J;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1631,8 +1631,8 @@
 					"$(PROJECT_DIR)/Frameworks/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.BlinkShell;
-				PRODUCT_NAME = Blink;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brychan.mossh;
+				PRODUCT_NAME = MoSSH;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -1646,11 +1646,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Blink/Blink.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HV2S48975V;
+				DEVELOPMENT_TEAM = 5LY66NJJ4J;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1668,10 +1668,10 @@
 					"$(PROJECT_DIR)/Frameworks/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.BlinkShell;
-				PRODUCT_NAME = Blink;
-				PROVISIONING_PROFILE = "ef71f761-fcc0-457d-ad7c-07e520594656";
-				PROVISIONING_PROFILE_SPECIFIER = Com.CarlosCabanero.BlinkShell.Dist;
+				PRODUCT_BUNDLE_IDENTIFIER = net.brychan.mossh;
+				PRODUCT_NAME = MoSSH;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = arm64;
@@ -1685,7 +1685,7 @@
 				INFOPLIST_FILE = BlinkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Carlos.BlinkUITests;
-				PRODUCT_NAME = Blink;
+				PRODUCT_NAME = MoSSH;
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Blink;
 				USES_XCTRUNNER = YES;
@@ -1699,7 +1699,7 @@
 				INFOPLIST_FILE = BlinkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Carlos.BlinkUITests;
-				PRODUCT_NAME = Blink;
+				PRODUCT_NAME = MoSSH;
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Blink;
 				USES_XCTRUNNER = YES;
@@ -1709,7 +1709,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		076FBE571DB80AC900F6D997 /* Build configuration list for PBXNativeTarget "Blink Hockey" */ = {
+		076FBE571DB80AC900F6D997 /* Build configuration list for PBXNativeTarget "MoSSH Hockey" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				076FBE581DB80AC900F6D997 /* Debug */,
@@ -1718,7 +1718,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA0BA1861C0CC57B00719C1A /* Build configuration list for PBXProject "Blink" */ = {
+		EA0BA1861C0CC57B00719C1A /* Build configuration list for PBXProject "MoSSH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA0BA1AB1C0CC57C00719C1A /* Debug */,
@@ -1727,7 +1727,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA0BA1AD1C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "Blink" */ = {
+		EA0BA1AD1C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "MoSSH" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA0BA1AE1C0CC57C00719C1A /* Debug */,
@@ -1736,7 +1736,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA0BA1B01C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "BlinkUITests" */ = {
+		EA0BA1B01C0CC57C00719C1A /* Build configuration list for PBXNativeTarget "MoSSHUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA0BA1B11C0CC57C00719C1A /* Debug */,
